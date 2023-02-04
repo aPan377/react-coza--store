@@ -1,4 +1,179 @@
 .nav--container {
   background-color: #fff;
-  height: 70px;
+  display: flex;
+  flex-direction: column;
+
+  .nav--mobile {
+    display: flex;
+    order: 1;
+    justify-content: space-between;
+    padding: 25px 15px 20px 15px;
+    @media (min-width: 780px) {
+      display: none;
+    }
+
+    .mobile--rightIcons {
+      display: flex;
+      gap: 23px;
+      font-size: 1.5rem;
+      opacity: 0.8;
+
+      div {
+        color: #000;
+        transition: color 0.2s;
+        display: flex;
+        &:hover {
+          cursor: pointer;
+          color: #2d47f5;
+        }
+        &:last-child {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .nav--primary {
+    background-color: #717fe0;
+    color: #f5f6fd;
+    order: 3;
+    font-size: 0.9rem;
+
+    @media (min-width: 780px) {
+      background-color: transparent;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+    }
+
+    ul {
+      @media (min-width: 780px) {
+        flex-direction: row;
+        padding: 0;
+        gap: 30px;
+      }
+      padding: 18px 0 18px 15px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      li {
+        transition: color 0.2s;
+        position: relative;
+        &:hover {
+          cursor: pointer;
+          color: #c2c2c2;
+          @media (min-width: 780px) {
+            color: #2d47f5;
+          }
+        }
+        .hot {
+          background-color: #f74877;
+          color: #fff;
+          font-size: 0.65em;
+          text-transform: uppercase;
+          margin-left: 5px;
+          padding: 2px 5px;
+          vertical-align: text-top;
+          border-radius: 25%;
+          @media (min-width: 780px) {
+            position: absolute;
+            top: -15px;
+            left: 50px;
+          }
+        }
+      }
+    }
+
+    .desktop--navbar--block {
+      display: none;
+      @media (min-width: 780px) {
+        display: flex;
+      }
+    }
+
+    .desktop--logo {
+      @media (min-width: 1024px) {
+        padding-left: 140px;
+      }
+    }
+
+    .desktop--icons {
+      @media (min-width: 780px) {
+        display: flex;
+        gap: 16px;
+        font-size: 1.4rem;
+        div {
+          transition: color 0.2s;
+          &:hover {
+            cursor: pointer;
+            color: #2d47f5;
+          }
+        }
+      }
+      @media (min-width: 1024px) {
+        padding-right: 140px;
+      }
+    }
+  }
+
+  .nav--secondary {
+    background-color: #222;
+    color: #ababab;
+    order: 2;
+    font-size: 0.7rem;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 11px 15px 11px 15px;
+
+    @media (min-width: 780px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+
+    p {
+      font-size: 0.75rem;
+      border-bottom: 1px solid #424242;
+      padding-bottom: 7px;
+      @media (min-width: 780px) {
+        padding: 0;
+        border-bottom: none;
+      }
+      @media (min-width: 1024px) {
+        padding-left: 140px;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      @media (min-width: 780px) {
+        gap: 15px;
+      }
+      @media (min-width: 1024px) {
+        padding-right: 140px;
+      }
+
+      li {
+        transition: color 0.2s;
+        border-left: 1px solid #505050;
+        border-right: 1px solid #505050;
+        padding: 0 6px;
+        &:hover {
+          cursor: pointer;
+          color: #717fe0;
+        }
+        @media (min-width: 780px) {
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
 }
