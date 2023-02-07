@@ -1,10 +1,13 @@
+@use "./colors";
+
 .nav--container {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .nav--mobile {
     display: flex;
+    background-color: colors.$whiteReg;
     order: 1;
     justify-content: space-between;
     padding: 25px 15px 20px 15px;
@@ -19,29 +22,29 @@
       opacity: 0.8;
 
       div {
-        color: #000;
+        color: colors.$blackReg;
         transition: color 0.2s;
         display: flex;
         &:hover {
           cursor: pointer;
-          color: #2d47f5;
+          color: colors.$purpleReg;
         }
         &:last-child {
-          color: #000;
+          color: colors.$blackReg;
         }
       }
     }
   }
 
   .nav--primary {
-    background-color: #717fe0;
-    color: #f5f6fd;
+    background-color: colors.$purpleReg;
+    color: colors.$darkWhiteReg;
     order: 3;
     font-size: 0.9rem;
 
     @media (min-width: 780px) {
       background-color: transparent;
-      color: #000;
+      color: colors.$blackReg;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -54,25 +57,27 @@
         padding: 0;
         gap: 30px;
       }
-      padding: 18px 0 18px 15px;
+      padding: 18px 15px 18px 15px;
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 12px;
 
       li {
-        transition: color 0.2s;
         position: relative;
-        &:hover {
-          cursor: pointer;
-          color: #c2c2c2;
-          @media (min-width: 780px) {
-            color: #2d47f5;
+        a {
+          transition: color 0.2s;
+          &:hover {
+            cursor: pointer;
+            color: colors.$darkWhiteRegHov;
+            @media (min-width: 780px) {
+              color: colors.$purpleReg;
+            }
           }
         }
         .hot {
-          background-color: #f74877;
-          color: #fff;
+          background-color: colors.$redReg;
+          color: colors.$whiteReg;
           font-size: 0.65em;
           text-transform: uppercase;
           margin-left: 5px;
@@ -110,7 +115,7 @@
           transition: color 0.2s;
           &:hover {
             cursor: pointer;
-            color: #2d47f5;
+            color: colors.$purpleReg;
           }
         }
       }
@@ -121,7 +126,7 @@
   }
 
   .nav--secondary {
-    background-color: #222;
+    background-color: colors.$blackRegChocho;
     color: #ababab;
     order: 2;
     font-size: 0.7rem;
@@ -139,7 +144,7 @@
 
     p {
       font-size: 0.75rem;
-      border-bottom: 1px solid #424242;
+      border-bottom: 1px solid colors.$darkGreyReg;
       padding-bottom: 7px;
       @media (min-width: 780px) {
         padding: 0;
@@ -152,26 +157,26 @@
 
     ul {
       display: flex;
-      gap: 10px;
       list-style: none;
-      @media (min-width: 780px) {
-        gap: 15px;
-      }
       @media (min-width: 1024px) {
         padding-right: 140px;
       }
 
       li {
-        transition: color 0.2s;
-        border-left: 1px solid #505050;
-        border-right: 1px solid #505050;
-        padding: 0 6px;
-        &:hover {
-          cursor: pointer;
-          color: #717fe0;
-        }
         @media (min-width: 780px) {
           padding: 8px 10px;
+        }
+        border-left: 1px solid colors.$darkGreyReg;
+        &:last-child {
+          border-right: 1px solid colors.$darkGreyReg;
+        }
+        padding: 0 6px;
+        a {
+          transition: color 0.2s;
+          &:hover {
+            cursor: pointer;
+            color: colors.$purpleReg;
+          }
         }
       }
     }
