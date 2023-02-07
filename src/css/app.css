@@ -1,10 +1,11 @@
 .nav--container {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .nav--container .nav--mobile {
   display: flex;
+  background-color: #fff;
   order: 1;
   justify-content: space-between;
   padding: 25px 15px 20px 15px;
@@ -27,7 +28,7 @@
 }
 .nav--container .nav--mobile .mobile--rightIcons div:hover {
   cursor: pointer;
-  color: #2d47f5;
+  color: #717fe0;
 }
 .nav--container .nav--mobile .mobile--rightIcons div:last-child {
   color: #000;
@@ -49,7 +50,7 @@
   }
 }
 .nav--container .nav--primary ul {
-  padding: 18px 0 18px 15px;
+  padding: 18px 15px 18px 15px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -63,16 +64,18 @@
   }
 }
 .nav--container .nav--primary ul li {
-  transition: color 0.2s;
   position: relative;
 }
-.nav--container .nav--primary ul li:hover {
+.nav--container .nav--primary ul li a {
+  transition: color 0.2s;
+}
+.nav--container .nav--primary ul li a:hover {
   cursor: pointer;
   color: #c2c2c2;
 }
 @media (min-width: 780px) {
-  .nav--container .nav--primary ul li:hover {
-    color: #2d47f5;
+  .nav--container .nav--primary ul li a:hover {
+    color: #717fe0;
   }
 }
 .nav--container .nav--primary ul li .hot {
@@ -116,7 +119,7 @@
   }
   .nav--container .nav--primary .desktop--icons div:hover {
     cursor: pointer;
-    color: #2d47f5;
+    color: #717fe0;
   }
 }
 @media (min-width: 1024px) {
@@ -160,13 +163,7 @@
 }
 .nav--container .nav--secondary ul {
   display: flex;
-  gap: 10px;
   list-style: none;
-}
-@media (min-width: 780px) {
-  .nav--container .nav--secondary ul {
-    gap: 15px;
-  }
 }
 @media (min-width: 1024px) {
   .nav--container .nav--secondary ul {
@@ -174,19 +171,97 @@
   }
 }
 .nav--container .nav--secondary ul li {
-  transition: color 0.2s;
-  border-left: 1px solid #505050;
-  border-right: 1px solid #505050;
+  border-left: 1px solid #424242;
   padding: 0 6px;
-}
-.nav--container .nav--secondary ul li:hover {
-  cursor: pointer;
-  color: #717fe0;
 }
 @media (min-width: 780px) {
   .nav--container .nav--secondary ul li {
     padding: 8px 10px;
   }
+}
+.nav--container .nav--secondary ul li:last-child {
+  border-right: 1px solid #424242;
+}
+.nav--container .nav--secondary ul li a {
+  transition: color 0.2s;
+}
+.nav--container .nav--secondary ul li a:hover {
+  cursor: pointer;
+  color: #717fe0;
+}
+
+.slider--container {
+  font-family: "Playfair Display", serif;
+  height: calc(100vh - 13px);
+  position: absolute;
+  inset: 13px 0 0 0;
+  z-index: -1;
+  overflow-y: hidden;
+}
+.slider--container .slide--wrap {
+  height: 100%;
+  position: relative;
+}
+.slider--container .slide--wrap .slide {
+  height: 100%;
+}
+.slider--container .slide--wrap .slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 60% 100%;
+  padding-top: 20px;
+}
+.slider--container .slide--wrap .slide .slide--text {
+  z-index: 9999;
+  color: #222222;
+  position: absolute;
+  inset: 50% 0 0 3%;
+}
+@media (min-width: 1024px) {
+  .slider--container .slide--wrap .slide .slide--text {
+    inset: 50% 0 0 10%;
+  }
+}
+.slider--container .slide--wrap .slide .slide--text .slide--text1 {
+  font-size: 2.5rem;
+}
+.slider--container .slide--wrap .slide .slide--text .slide--text2 {
+  font-size: 4rem;
+}
+.slider--container .slide--wrap .slide .slide--text .slide--text3 {
+  color: #fff;
+  background-color: #717fe0;
+  display: inline-block;
+  padding: 8px 12px;
+  transition: background-color 0.2s;
+}
+.slider--container .slide--wrap .slide .slide--text .slide--text3:hover {
+  background-color: #5f6bbd;
+  cursor: pointer;
+}
+.slider--container .slider--buttons {
+  background-color: transparent;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+@media (min-width: 1024px) {
+  .slider--container .slider--buttons {
+    font-size: 2.3rem;
+  }
+}
+.slider--container .slider--buttons div {
+  cursor: pointer;
+  color: #c2c2c2;
+  transition: color 0.2s;
+}
+.slider--container .slider--buttons div:hover {
+  color: #717fe0;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,6 +1,6 @@
 import React from "react";
-import "../app.css";
 import logo from "../../images/icons/logo-01.png";
+
 import { BiSearch } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
 import { AiOutlineHeart } from "react-icons/ai";
@@ -8,7 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   return (
-    <div className="nav--container">
+    <header className="nav--container">
       <div className="nav--mobile">
         {/* left logo */}
         <div>
@@ -38,20 +38,29 @@ const Navbar = () => {
         {/* desktop navbar block*/}
         <ul>
           <li>
-            Home
+            <a>Home</a>
             {/* <ul>
               <li>Home 1</li>
               <li>Home 2</li>
               <li>Home 3</li>
             </ul> */}
           </li>
-          <li>Shop</li>
           <li>
-            Features<span className="hot">Hot</span>
+            <a>Shop</a>
           </li>
-          <li>Blog</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <a>Features</a>
+            <span className="hot">Hot</span>
+          </li>
+          <li>
+            <a>Blog</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
         </ul>
         {/* desktop navbar block*/}
         <div className="desktop--navbar--block desktop--icons">
@@ -70,13 +79,21 @@ const Navbar = () => {
       <div className="nav--secondary">
         <p>Free shipping for standard order over $100 </p>
         <ul>
-          <li>Help & FAQs</li>
-          <li>My Account</li>
-          <li>EN</li>
-          <li>USD</li>
+          <li>
+            <a>Help & FAQs</a>
+          </li>
+          <li>
+            <a>My Account</a>
+          </li>
+          <li>
+            <a>EN</a>
+          </li>
+          <li>
+            <a>USD</a>
+          </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 
