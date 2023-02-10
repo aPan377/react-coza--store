@@ -5,11 +5,9 @@
   height: calc(100vh - 13px);
   position: absolute;
   inset: 13px 0 0 0;
-  // z-index: -1;
   overflow-y: hidden;
 
   .slide--wrap {
-    // position: relative;
     height: 100vh;
 
     .slide {
@@ -29,10 +27,16 @@
           inset: 50% 0 0 10%;
         }
         .slide--text1 {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
+          @media (min-width: 1024px) {
+            font-size: 2.5rem;
+          }
         }
         .slide--text2 {
-          font-size: 4rem;
+          font-size: 3.2rem;
+          @media (min-width: 1024px) {
+            font-size: 4rem;
+          }
         }
         .slide--text3 {
           color: colors.$whiteReg;

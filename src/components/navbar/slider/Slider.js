@@ -11,7 +11,7 @@ const Slider = () => {
     <div className="slider--container">
       <div className="slide--wrap">
         <div className="slide">
-          <img src={slide1} />
+          <img src={slide1} alt="slide background" />
           <div className="slide--text">
             <div className="slide--text1">Women Collection 2023</div>
             <div className="slide--text2">New Season</div>
@@ -19,7 +19,7 @@ const Slider = () => {
           </div>
         </div>
         {/* <div className="slide">
-          <img src={slide2} />
+          <img src={slide2} alt="slide background" />
           <div className="slide--text">
             <div className="slide--text1">Men New Season</div>
             <div className="slide--text2">Jackets & Coats</div>
@@ -27,7 +27,7 @@ const Slider = () => {
           </div>
         </div>
         <div className="slide">
-          <img src={slide3} />
+          <img src={slide3} alt="slide background" />
           <div className="slide--text">
             <div className="slide--text1">Men Collection 2023</div>
             <div className="slide--text2">New Arrivals</div>

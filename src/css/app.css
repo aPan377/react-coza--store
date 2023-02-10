@@ -37,6 +37,7 @@
 }
 .nav--container .nav--primary {
   background-color: #717fe0;
+  opacity: 0.8;
   color: #f5f6fd;
   order: 3;
   font-size: 0.9rem;
@@ -225,10 +226,20 @@
   }
 }
 .slider--container .slide--wrap .slide .slide--text .slide--text1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 1024px) {
+  .slider--container .slide--wrap .slide .slide--text .slide--text1 {
+    font-size: 2.5rem;
+  }
 }
 .slider--container .slide--wrap .slide .slide--text .slide--text2 {
-  font-size: 4rem;
+  font-size: 3.2rem;
+}
+@media (min-width: 1024px) {
+  .slider--container .slide--wrap .slide .slide--text .slide--text2 {
+    font-size: 4rem;
+  }
 }
 .slider--container .slide--wrap .slide .slide--text .slide--text3 {
   color: #fff;
@@ -264,6 +275,89 @@
 .slider--container .slider--buttons div:hover {
   color: #717fe0;
   cursor: pointer;
+}
+
+.category--container {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  border: 1px solid #cacaca;
+  color: #424242;
+}
+.category--container:hover {
+  background-color: #717fe0;
+  cursor: pointer;
+}
+.category--container:hover img {
+  opacity: 0.4;
+}
+.category--container:hover .category--text {
+  color: #fff;
+}
+.category--container:hover .category--link {
+  bottom: 20px;
+}
+.category--container:hover .category--link::after {
+  transform: scaleX(1);
+}
+.category--container img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s;
+}
+.category--container .category--text {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.category--container .category--text h4 {
+  font-size: 1.1rem;
+}
+.category--container .category--text p {
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+.category--container .category--link {
+  position: absolute;
+  left: 25px;
+  bottom: -20px;
+  font-size: 0.9rem;
+  color: #fff;
+  transition: bottom 1s;
+}
+.category--container .category--link::after {
+  content: "";
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: transform 1s 0.5s;
+}
+
+.categories--container {
+  margin-top: 40px;
+  padding: 0 10px;
+  display: grid;
+  justify-content: center;
+  gap: 25px;
+  grid-template-columns: repeat(1, minmax(0, 0.9fr));
+}
+@media (min-width: 640px) {
+  .categories--container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .categories--container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .categories--container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

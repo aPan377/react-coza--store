@@ -1,5 +1,4 @@
 import Navbar from "./navbar/Navbar";
-import Slider from "./navbar/slider/Slider";
 import Categories from "./categories/Categories";
 
 import "../css/app.css";
