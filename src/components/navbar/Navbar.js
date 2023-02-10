@@ -6,6 +6,8 @@ import { FiShoppingCart } from "react-icons/fi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
+import Slider from "./slider/Slider";
+
 const Navbar = () => {
   return (
     <header className="nav--container">
@@ -93,6 +95,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <Slider />
     </header>
   );
 };

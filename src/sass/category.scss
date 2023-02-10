@@ -1,0 +1,60 @@
+@use "./colors";
+
+.category--container {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  border: 1px solid colors.$categoryBorderColor;
+  color: colors.$darkGreyReg;
+  &:hover {
+    background-color: colors.$purpleReg;
+    cursor: pointer;
+    img {
+      opacity: 0.4;
+    }
+    .category--text {
+      color: colors.$whiteReg;
+    }
+    .category--link {
+      bottom: 20px;
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.4s;
+  }
+  .category--text {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    h4 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 0.8rem;
+      padding-top: 10px;
+    }
+  }
+  .category--link {
+    position: absolute;
+    left: 25px;
+    bottom: -20px;
+    font-size: 0.9rem;
+    color: colors.$whiteReg;
+    transition: bottom 1s;
+    &::after {
+      content: "";
+      height: 2px;
+      background-color: colors.$whiteReg;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      transform: scaleX(0);
+      transition: transform 1s 0.5s;
+    }
+  }
+}
