@@ -545,4 +545,77 @@
   color: #f5f6fd;
 }
 
+.footer--container {
+  background-color: #222;
+  color: #c2c2c2;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer--container .footer--container--wrap {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(1, min-width(0, 1fr));
+  font-size: 0.85rem;
+}
+@media (min-width: 640px) {
+  .footer--container .footer--container--wrap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .footer--container .footer--container--wrap {
+    padding: 0 120px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.footer--container .footer--container--wrap div h3 {
+  text-transform: uppercase;
+  padding-top: 40px;
+}
+.footer--container .footer--container--wrap div ul {
+  list-style: none;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 0.75rem;
+}
+.footer--container .footer--container--wrap div ul li a {
+  transition: color 0.3s;
+}
+.footer--container .footer--container--wrap div ul li a:hover {
+  color: #5f6bbd;
+  cursor: pointer;
+}
+.footer--container .footer--container--wrap div p {
+  padding-top: 30px;
+  font-size: 0.8rem;
+}
+.footer--container .footer--container--wrap .footer--social--icons {
+  padding: 35px 0;
+  color: #ababab;
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+.footer--container .footer--container--wrap .footer--social--icons div {
+  transition: color 0.3s;
+}
+.footer--container .footer--container--wrap .footer--social--icons div:hover {
+  color: #5f6bbd;
+  cursor: pointer;
+}
+.footer--container .footer--payment--icons {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+@media (min-width: 1024px) {
+  .footer--container .footer--payment--icons {
+    padding-top: 40px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
