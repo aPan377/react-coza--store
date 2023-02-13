@@ -1,0 +1,77 @@
+@use "./colors";
+
+.footer--container {
+  background-color: colors.$blackRegChocho;
+  color: colors.$darkWhiteRegHov;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+
+  .footer--container--wrap {
+    @media (min-width: 640px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (min-width: 1024px) {
+      padding: 0 120px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(1, min-width(0, 1fr));
+    font-size: 0.85rem;
+
+    div {
+      h3 {
+        text-transform: uppercase;
+        padding-top: 40px;
+      }
+      ul {
+        list-style: none;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 0.75rem;
+
+        li {
+          a {
+            transition: color 0.3s;
+            &:hover {
+              color: colors.$purpleRegHov;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      p {
+        padding-top: 30px;
+        font-size: 0.8rem;
+      }
+    }
+    .footer--social--icons {
+      padding: 35px 0;
+      color: colors.$darkWhiteColor;
+      display: flex;
+      gap: 15px;
+      font-size: 1.2rem;
+      div {
+        transition: color 0.3s;
+        &:hover {
+          color: colors.$purpleRegHov;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footer--payment--icons {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    @media (min-width: 1024px) {
+      padding-top: 40px;
+    }
+  }
+}
