@@ -1,0 +1,67 @@
+@use "colors";
+
+.product--container {
+  display: flex;
+  flex-direction: column;
+  .product--image--container {
+    div {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+        p {
+          bottom: 20px;
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        transition: all 0.8s ease;
+        object-fit: cover;
+      }
+      p {
+        @media (min-width: 1024px) {
+          font-size: 0.65rem;
+        }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -100%;
+        color: colors.$blackRegChocho;
+        background-color: colors.$whiteReg;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        transition: bottom 0.5s, background-color 0.4s, color 0.4s;
+        &:hover {
+          background-color: colors.$blackRegChocho;
+          color: colors.$whiteReg;
+        }
+      }
+    }
+  }
+
+  div {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    p {
+      color: colors.$darkWhiteColor;
+      transition: all 0.2s;
+      &:hover {
+        color: colors.$purpleRegHov;
+        cursor: pointer;
+      }
+    }
+  }
+  p {
+    font-size: 0.9rem;
+    color: colors.$darkWhiteColor;
+  }
+}
