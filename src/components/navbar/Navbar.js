@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import logo from "../../images/icons/logo-01.png";
 
 import { BiSearch } from "react-icons/bi";
@@ -40,28 +42,23 @@ const Navbar = () => {
         {/* desktop navbar block*/}
         <ul>
           <li>
-            <a>Home</a>
-            {/* <ul>
-              <li>Home 1</li>
-              <li>Home 2</li>
-              <li>Home 3</li>
-            </ul> */}
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <a>Shop</a>
+            <Link to={"/products"}>Products</Link>
           </li>
           <li>
-            <a>Features</a>
+            <Link>Features</Link>
             <span className="hot">Hot</span>
           </li>
           <li>
-            <a>Blog</a>
+            <Link to={"/blog"}>Blog</Link>
           </li>
           <li>
-            <a>About</a>
+            <Link to={"/about"}>About</Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link to={"/contact"}>Contact</Link>
           </li>
         </ul>
         {/* desktop navbar block*/}
@@ -82,16 +79,16 @@ const Navbar = () => {
         <p>Free shipping for standard order over $100 </p>
         <ul>
           <li>
-            <a>Help & FAQs</a>
+            <Link>Help & FAQs</Link>
           </li>
           <li>
-            <a>My Account</a>
+            <Link>My Account</Link>
           </li>
           <li>
-            <a>EN</a>
+            <Link>EN</Link>
           </li>
           <li>
-            <a>USD</a>
+            <Link>USD</Link>
           </li>
         </ul>
       </div>
