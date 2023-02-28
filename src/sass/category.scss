@@ -5,6 +5,7 @@
   position: relative;
   border: 1px solid colors.$categoryBorderColor;
   color: colors.$darkGreyReg;
+  max-height: 250px;
   &:hover {
     background-color: colors.$purpleReg;
     cursor: pointer;

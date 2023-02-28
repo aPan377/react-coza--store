@@ -2,10 +2,13 @@
 
 .slider--container {
   font-family: "Playfair Display", serif;
-  height: calc(100vh - 13px);
-  position: absolute;
-  inset: 13px 0 0 0;
+  height: 100vh;
+  position: relative;
+  top: -65px;
   overflow-y: hidden;
+  @media (min-width: 780px) {
+    top: -90px;
+  }
 
   .slide--wrap {
     height: 100vh;
@@ -22,9 +25,9 @@
       .slide--text {
         color: #222222;
         position: absolute;
-        inset: 50% 0 0 3%;
+        inset: 50% 0 0 10px;
         @media (min-width: 1024px) {
-          inset: 50% 0 0 10%;
+          inset: 50% 0 0 152px;
         }
         .slide--text1 {
           font-size: 1.8rem;

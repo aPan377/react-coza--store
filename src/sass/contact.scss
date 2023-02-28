@@ -2,7 +2,7 @@
 
 .contact {
   .contact--header--image {
-    margin-top: 30px;
+    // margin-top: 30px;
     height: 240px;
     background-image: url("../images/bg-01.jpg");
     background-size: cover;
@@ -11,8 +11,6 @@
   }
   .contact--form--info {
     @media (min-width: 780px) {
-      //   flex-direction: row;
-      //   justify-content: space-around;
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     @media (min-width: 1280px) {
