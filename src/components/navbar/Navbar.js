@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../images/icons/logo-01.png";
@@ -8,8 +8,6 @@ import { FiShoppingCart } from "react-icons/fi";
 import { AiOutlineHeart, AiOutlineClose } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import Slider from "./slider/Slider";
-
 const Navbar = () => {
   const [navbarIsOpen, setnavbarIsOpen] = useState(false);
 
@@ -17,7 +15,6 @@ const Navbar = () => {
     const navigation = document.querySelector(".nav--mobile--second--third");
     navigation.setAttribute("aria-expanded", !navbarIsOpen);
     setnavbarIsOpen(!navbarIsOpen);
-    console.log(navbarIsOpen);
   }
 
   return (
@@ -45,8 +42,6 @@ const Navbar = () => {
               {navbarIsOpen ? <AiOutlineClose /> : <RxHamburgerMenu />}
             </div>
           </div>
-          {/* mobile icons */}
-          {/* primary--nav--block */}
         </div>
         <div className="nav--mobile--second--third" aria-expanded="false">
           <div className="nav--secondary">
@@ -155,8 +150,6 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-
-      {/* <Slider /> */}
     </header>
   );
 };
