@@ -4,7 +4,7 @@ import Products from "./products/Products";
 import Footer from "./footer/Footer";
 
 import "../css/app.css";
-import Slider from "./navbar/slider/Slider";
+import Slider from "./slider/Slider";
 
 function App() {
   return (

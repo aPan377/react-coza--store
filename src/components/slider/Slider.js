@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import slide1 from "../../../images/slide-01.jpg";
-import slide2 from "../../../images/slide-02.jpg";
-import slide3 from "../../../images/slide-03.jpg";
+import slide1 from "./../../images/slide-01.jpg";
+import slide2 from "./../../images/slide-02.jpg";
+import slide3 from "./../../images/slide-03.jpg";
 
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
