@@ -5,6 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./css/main.css";
 
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
 import App from "./components/App";
 import ErrorPage from "./components/error/ErrorPage";
 import AllProducts from "./components/shop/AllProducts";
@@ -40,8 +43,10 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <Provider store={store}>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </Provider>
   </React.StrictMode>
 );

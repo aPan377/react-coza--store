@@ -1,15 +1,17 @@
 @use "./colors";
 
 .nav--container {
-  @media (max-width: 780px) {
+  @media (max-width: 779px) {
     position: sticky;
     top: 0;
     z-index: 1000;
   }
+
   .nav--mobile {
-    @media (min-width: 780px) {
+    @media (min-width: 781px) {
       display: none;
     }
+
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -184,7 +186,7 @@
   }
 
   .nav--computer {
-    @media (max-width: 779px) {
+    @media (max-width: 780px) {
       display: none;
     }
     display: flex;

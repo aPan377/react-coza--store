@@ -1,4 +1,4 @@
-@media (max-width: 780px) {
+@media (max-width: 779px) {
   .nav--container {
     position: sticky;
     top: 0;
@@ -12,7 +12,7 @@
   top: 0;
   z-index: 1000;
 }
-@media (min-width: 780px) {
+@media (min-width: 781px) {
   .nav--container .nav--mobile {
     display: none;
   }
@@ -194,7 +194,7 @@
   position: relative;
   z-index: 1000;
 }
-@media (max-width: 779px) {
+@media (max-width: 780px) {
   .nav--container .nav--computer {
     display: none;
   }
@@ -303,7 +303,7 @@
   top: -65px;
   overflow-y: hidden;
 }
-@media (min-width: 780px) {
+@media (min-width: 781px) {
   .slider--container {
     top: -90px;
   }
