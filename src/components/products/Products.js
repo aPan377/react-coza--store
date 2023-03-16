@@ -42,9 +42,11 @@ const Products = () => {
         {products.map((product, index) => (
           <Product
             key={index}
+            id={product.id}
             img={product.img}
             title={product.title}
             price={product.price}
+            description={product.description}
           />
         ))}
       </section>
