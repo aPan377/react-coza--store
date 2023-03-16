@@ -20,22 +20,134 @@ import product16 from "./../images/product-16.jpg";
 const products = createSlice({
   name: "products",
   initialState: [
-    { img: product1, title: "Esprit Ruffle Shirt", price: "16.64" },
-    { img: product2, title: "Herschel Supply", price: "35.31" },
-    { img: product3, title: "Only Check Trouser", price: "25.50" },
-    { img: product4, title: "Classic Trench Coat", price: "75.00" },
-    { img: product5, title: "Front Pocket Jumper", price: "34.75" },
-    { img: product6, title: "Vintage Inspired Classic", price: "93.20" },
-    { img: product7, title: "Shirt in Stretch Cotton", price: "52.66" },
-    { img: product8, title: "Pieces Metallic Printed", price: "18.96" },
-    { img: product9, title: "Converse All Star Hi Plimsolls", price: "75.00" },
-    { img: product10, title: "Femme T-Shirt In Stripe", price: "25.85" },
-    { img: product11, title: "Herschel Supply", price: "63.16" },
-    { img: product12, title: "Herschel Supply", price: "63.15" },
-    { img: product13, title: "T-Shirt with Sleeve", price: "18.49" },
-    { img: product14, title: "Pretty Little Thing", price: "54.79" },
-    { img: product15, title: "Mini Silver Mesh Watch", price: "86.85" },
-    { img: product16, title: "Square Neck Back ", price: "29.64" },
+    {
+      id: 1,
+      img: product1,
+      title: "Esprit Ruffle Shirt",
+      price: "16.64",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 2,
+      img: product2,
+      title: "Herschel Supply",
+      price: "35.31",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 3,
+      img: product3,
+      title: "Only Check Trouser",
+      price: "25.50",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 4,
+      img: product4,
+      title: "Classic Trench Coat",
+      price: "75.00",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 5,
+      img: product5,
+      title: "Front Pocket Jumper",
+      price: "34.75",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 6,
+      img: product6,
+      title: "Vintage Inspired Classic",
+      price: "93.20",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 7,
+      img: product7,
+      title: "Shirt in Stretch Cotton",
+      price: "52.66",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 8,
+      img: product8,
+      title: "Pieces Metallic Printed",
+      price: "18.96",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 9,
+      img: product9,
+      title: "Converse All Star Hi Plimsolls",
+      price: "75.00",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 10,
+      img: product10,
+      title: "Femme T-Shirt In Stripe",
+      price: "25.85",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 11,
+      img: product11,
+      title: "Herschel Supply",
+      price: "63.16",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 12,
+      img: product12,
+      title: "Herschel Supply",
+      price: "63.15",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 13,
+      img: product13,
+      title: "T-Shirt with Sleeve",
+      price: "18.49",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 14,
+      img: product14,
+      title: "Pretty Little Thing",
+      price: "54.79",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 15,
+      img: product15,
+      title: "Mini Silver Mesh Watch",
+      price: "86.85",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
+    {
+      id: 16,
+      img: product16,
+      title: "Square Neck Back ",
+      price: "29.64",
+      description:
+        "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+    },
   ],
   reducers: {},
 });
