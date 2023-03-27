@@ -14,6 +14,7 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -22,15 +23,21 @@
       padding: 20px 15px 20px 15px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       z-index: 9999;
       background-color: colors.$whiteReg;
+
+      .nav--mobile--primary--logo {
+        display: flex;
+        align-items: center;
+      }
 
       .mobile--rightIcons {
         display: flex;
         gap: 23px;
         font-size: 1.5rem;
         opacity: 0.8;
-
+        position: relative;
         div {
           color: colors.$blackReg;
           transition: color 0.2s;
@@ -43,6 +50,18 @@
             color: colors.$blackReg;
           }
         }
+        .shopcart--quantity--container {
+          position: relative;
+          .shopcart--quantity {
+            background-color: colors.$purpleReg;
+            color: colors.$whiteReg;
+            font-size: 0.8rem;
+            position: absolute;
+            top: -14px;
+            right: -14px;
+            padding: 0 5px;
+          }
+        }
       }
     }
 
@@ -51,7 +70,7 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 65px;
+      top: 60px;
       width: 100%;
       transition: transform 0.5s;
       transform: translateY(-100%);
@@ -195,7 +214,7 @@
     z-index: 1000;
     .nav--primary {
       @media (min-width: 1024px) {
-        padding-inline: 152px;
+        padding-inline: 140px;
       }
       background-color: transparent;
       color: colors.$blackReg;
@@ -240,20 +259,38 @@
 
       .desktop--icons {
         display: flex;
-        gap: 16px;
+        gap: 23px;
         font-size: 1.4rem;
+        .shopcart--quantity--container {
+          position: relative;
+          .shopcart--quantity {
+            background-color: colors.$purpleReg;
+            color: colors.$whiteReg;
+            font-size: 0.8rem;
+            position: absolute;
+            top: -14px;
+            right: -14px;
+            padding: 0 5px;
+          }
+        }
         div {
           transition: color 0.2s;
+          display: flex;
+          align-items: center;
           &:hover {
             cursor: pointer;
             color: colors.$purpleReg;
           }
         }
       }
+      .desktop--logo {
+        display: flex;
+        align-items: center;
+      }
     }
     .nav--secondary {
       @media (min-width: 1024px) {
-        padding-inline: 152px;
+        padding-inline: 140px;
       }
       background-color: colors.$blackRegChocho;
       color: #ababab;

@@ -2,16 +2,16 @@
 
 .slider--container {
   font-family: "Playfair Display", serif;
-  height: 100vh;
+  height: calc(100vh + 10px);
   position: relative;
-  top: -65px;
-  overflow-y: hidden;
+  top: -50px;
+  overflow: hidden;
   @media (min-width: 781px) {
     top: -90px;
   }
 
   .slide--wrap {
-    height: 100vh;
+    height: 100%;
 
     .slide {
       &[data-activeslide="false"] {
