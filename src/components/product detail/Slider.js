@@ -2,21 +2,25 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
+import slider1 from "../../images/product-detail-01.jpg";
+import slider2 from "../../images/product-detail-02.jpg";
+import slider3 from "../../images/product-detail-03.jpg";
+
 const Slider = () => {
   //   const imgList = [img, img, img];
 
   const imgList = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      src: slider1,
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      src: slider2,
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dCUyMHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      src: slider3,
     },
   ];
 

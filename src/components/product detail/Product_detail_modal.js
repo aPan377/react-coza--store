@@ -10,7 +10,12 @@ import DropDownColor from "./DropDownColor";
 import AddToCartError from "./AddToCartError";
 import AddToCartSuccess from "./AddToCartSuccess";
 
+import { useDispatch } from "react-redux";
+import { addProduct } from "../../redux/orderSlice";
+
 const Product_detail_modal = (props) => {
+  const dispatch = useDispatch();
+
   const [dropDownSize, setDropDownSize] = useState(false);
   const [dropDownColor, setDropDownColor] = useState(false);
   const [showError, setShowError] = useState(null);
@@ -34,10 +39,10 @@ const Product_detail_modal = (props) => {
       setShowError(true);
       setTimeout(() => {
         setShowError(false);
-      }, 2000);
+      }, 5000);
     } else if (sizeRef.current.value && colorRef.current.value) {
       setShowError(false);
-      const oldOrder = JSON.parse(localStorage.getItem("orderItem")) || [];
+      const oldOrder = JSON.parse(localStorage.getItem("order")) || [];
       const newOrder = {
         id: idRef.current,
         title: titleRef.current,
@@ -47,12 +52,14 @@ const Product_detail_modal = (props) => {
         color: colorRef.current.value,
         amount: amountRef.current.value,
       };
+      dispatch(addProduct(newOrder));
       oldOrder.push(newOrder);
-      localStorage.setItem("orderItem", JSON.stringify(oldOrder));
+      localStorage.setItem("order", JSON.stringify(oldOrder));
       setShowSuccess(true);
       setTimeout(() => {
         setShowSuccess(false);
-      }, 2000);
+        closeModal();
+      }, 5000);
     }
   }
 
@@ -112,6 +119,7 @@ const Product_detail_modal = (props) => {
       className="product--detail--modal--container"
       id="product--detail--modal--container"
       ref={containerDivRef}
+      aria-expanded={props.modalStatus}
     >
       <div
         className="modal--close"

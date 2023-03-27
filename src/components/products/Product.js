@@ -13,6 +13,7 @@ const Product = ({ id, img, title, price, description }) => {
           title={title}
           price={price}
           description={description}
+          modalStatus={modalStatus}
           setModalStatus={() => setModalStatus(!modalStatus)}
         />
       ) : (

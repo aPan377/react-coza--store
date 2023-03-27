@@ -4,15 +4,9 @@
   display: flex;
   flex-direction: column;
   .product--image--container {
+    cursor: pointer;
     div {
-      @media (min-width: 1024px) {
-        max-height: 390px;
-      }
-      @media (min-width: 1280px) {
-        max-height: 490px;
-      }
       position: relative;
-      max-height: 490px;
       overflow: hidden;
       &:hover {
         img {
@@ -23,15 +17,13 @@
         }
       }
       img {
+        min-height: 390px;
         height: 100%;
         width: 100%;
         transition: all 0.8s ease;
         object-fit: cover;
       }
       p {
-        @media (min-width: 1024px) {
-          font-size: 0.65rem;
-        }
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -44,7 +36,8 @@
         align-items: center;
         padding: 10px 30px;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        width: max-content;
+        font-size: 0.65rem;
         transition: bottom 0.5s, background-color 0.4s, color 0.4s;
         &:hover {
           background-color: colors.$blackRegChocho;
