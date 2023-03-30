@@ -158,7 +158,7 @@ const products = createSlice({
     {
       id: 16,
       img: product16,
-      title: "Square Neck Back ",
+      title: "Square Neck Back",
       price: "29.64",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",

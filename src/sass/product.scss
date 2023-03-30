@@ -14,6 +14,9 @@
         p {
           bottom: 20px;
         }
+        img {
+          transform: scale(1.1);
+        }
       }
       img {
         min-height: 390px;
@@ -21,9 +24,6 @@
         width: 100%;
         transition: all 0.8s ease;
         object-fit: cover;
-        &:hover {
-          transform: scale(1.1);
-        }
       }
       p {
         position: absolute;
