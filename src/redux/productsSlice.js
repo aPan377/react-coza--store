@@ -27,6 +27,7 @@ const products = createSlice({
       price: "16.64",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 2,
@@ -35,6 +36,7 @@ const products = createSlice({
       price: "35.31",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 3,
@@ -43,6 +45,7 @@ const products = createSlice({
       price: "25.50",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["men"],
     },
     {
       id: 4,
@@ -51,6 +54,7 @@ const products = createSlice({
       price: "75.00",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 5,
@@ -59,6 +63,7 @@ const products = createSlice({
       price: "34.75",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 6,
@@ -67,6 +72,7 @@ const products = createSlice({
       price: "93.20",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["watch"],
     },
     {
       id: 7,
@@ -75,6 +81,7 @@ const products = createSlice({
       price: "52.66",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 8,
@@ -83,6 +90,7 @@ const products = createSlice({
       price: "18.96",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 9,
@@ -91,6 +99,7 @@ const products = createSlice({
       price: "75.00",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women", "shoes"],
     },
     {
       id: 10,
@@ -99,6 +108,7 @@ const products = createSlice({
       price: "25.85",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 11,
@@ -107,6 +117,7 @@ const products = createSlice({
       price: "63.16",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["men"],
     },
     {
       id: 12,
@@ -115,6 +126,7 @@ const products = createSlice({
       price: "63.15",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["belts"],
     },
     {
       id: 13,
@@ -123,6 +135,7 @@ const products = createSlice({
       price: "18.49",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 14,
@@ -131,6 +144,7 @@ const products = createSlice({
       price: "54.79",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
     {
       id: 15,
@@ -139,6 +153,7 @@ const products = createSlice({
       price: "86.85",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["watches"],
     },
     {
       id: 16,
@@ -147,6 +162,7 @@ const products = createSlice({
       price: "29.64",
       description:
         "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat",
+      category: ["women"],
     },
   ],
   reducers: {},
