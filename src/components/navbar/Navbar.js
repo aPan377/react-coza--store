@@ -37,9 +37,6 @@ const Navbar = () => {
             {/* logo image */}
             {/* mobile icons */}
             <div className="mobile--rightIcons">
-              <div>
-                <BiSearch />
-              </div>
               <div
                 onClick={() => setShowShopCart(!showShopCart)}
                 className="shopcart--quantity--container"
@@ -136,9 +133,6 @@ const Navbar = () => {
             </ul>
             {/* desktop navbar block*/}
             <div className="desktop--icons">
-              <div>
-                <BiSearch />
-              </div>
               <div
                 className="shopcart--quantity--container"
                 onClick={() => setShowShopCart(!showShopCart)}
