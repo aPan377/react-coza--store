@@ -1,8 +1,71 @@
 @use "colors";
 
 .contact {
+  position: relative;
+  .contact--error {
+    @media (max-width: 640px) {
+      width: calc(100% - 40px);
+    }
+    @keyframes showError {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes hideError {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    animation: showError 0.5s forwards;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: colors.$redReg;
+    padding: 5px 10px;
+    color: colors.$whiteReg;
+    &[aria-expanded="false"] {
+      animation: hideError 0.5s forwards;
+    }
+  }
+  .contact--success {
+    @keyframes showSuccess {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes hideSuccess {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    animation: showSuccess 0.5s forwards;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: colors.$greenSuccess;
+    padding: 5px 10px;
+    color: colors.$whiteReg;
+    &[aria-expanded="false"] {
+      animation: hideSuccess 0.5s forwards;
+    }
+  }
   .contact--header--image {
-    // margin-top: 30px;
     height: 240px;
     background-image: url("../images/bg-01.jpg");
     background-size: cover;

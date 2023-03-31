@@ -109,9 +109,9 @@ const Products = () => {
             ))}
           </section>
           <section className="products--load--button">
-            <div>
+            {/* <div>
               <p>load more</p>
-            </div>
+            </div> */}
           </section>
         </>
       )}

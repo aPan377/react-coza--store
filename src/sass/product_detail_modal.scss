@@ -400,13 +400,13 @@
         div {
           display: flex;
           justify-content: space-between;
-          background-color: rgb(255, 126, 126);
+          background-color: colors.$redError;
           div {
             display: flex;
             align-items: center;
             padding: 10px;
             color: colors.$whiteReg;
-            animation: appear 0.7s;
+            animation: appear 0.5s forwards;
             font-size: 0.9rem;
             &:last-child {
               font-size: 1.2rem;
@@ -439,13 +439,13 @@
         div {
           display: flex;
           justify-content: space-between;
-          background-color: rgb(85, 185, 189);
+          background-color: colors.$greenSuccess;
           div {
             display: flex;
             align-items: center;
             padding: 10px;
             color: colors.$whiteReg;
-            animation: appear 0.7s;
+            animation: appear 0.5 forwards;
             font-size: 0.9rem;
             &:last-child {
               font-size: 1.2rem;
