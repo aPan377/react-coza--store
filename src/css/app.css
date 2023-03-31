@@ -752,7 +752,6 @@
   min-width: 300px;
   outline: none;
   border: 1px solid #cacaca;
-  border-radius: 15px;
 }
 .products--container .products--category .category--buttons .category--buttons--input span {
   position: absolute;
@@ -1092,6 +1091,74 @@
   cursor: pointer;
 }
 
+.contact {
+  position: relative;
+}
+.contact .contact--error {
+  animation: showError 0.5s forwards;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #f74877;
+  padding: 5px 10px;
+  color: #fff;
+}
+@media (max-width: 640px) {
+  .contact .contact--error {
+    width: calc(100% - 40px);
+  }
+}
+@keyframes showError {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hideError {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.contact .contact--error[aria-expanded=false] {
+  animation: hideError 0.5s forwards;
+}
+.contact .contact--success {
+  animation: showSuccess 0.5s forwards;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(85, 185, 189);
+  padding: 5px 10px;
+  color: #fff;
+}
+@keyframes showSuccess {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hideSuccess {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.contact .contact--success[aria-expanded=false] {
+  animation: hideSuccess 0.5s forwards;
+}
 .contact .contact--header--image {
   height: 240px;
   background-image: url("../images/bg-01.jpg");
@@ -1625,7 +1692,7 @@
   align-items: center;
   padding: 10px;
   color: #fff;
-  animation: appear 0.7s;
+  animation: appear 0.5s forwards;
   font-size: 0.9rem;
 }
 .product--detail--modal--container .product--detail--container .product--detail--info .addToCartError div div:last-child {
@@ -1664,7 +1731,7 @@
   align-items: center;
   padding: 10px;
   color: #fff;
-  animation: appear 0.7s;
+  animation: appear 0.5 forwards;
   font-size: 0.9rem;
 }
 .product--detail--modal--container .product--detail--container .product--detail--info .addToCartSuccess div div:last-child {
@@ -1986,9 +2053,8 @@
 }
 
 .error--page {
-  height: 100vh;
-  width: 100vw;
-  background-color: #c2c2c2;
+  min-height: 100vh;
+  background-color: #fff;
   color: #424242;
   display: flex;
   align-items: center;
